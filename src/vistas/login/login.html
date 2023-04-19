@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="../../../src/vistas/login/login.css">    
+    <script src="../../../src/Arboles/AVL/AVL.js"></script>
+    <script src="../../../src/vistas/login/login.js"></script>
+    <!-- Importar Archivo Principal -->
+  </head>
+  <body>
+    <div class="wrapper fadeInDown">
+      <div id="formContent">
+        <!-- Tabs Titles -->
+
+        <!-- Icon -->
+        <div class="fadeIn first">
+          <img src="../../../src/assets/LogoLetras.png" id="icon" alt="User Icon"/>
+          <h3>Ingresar</h3>
+        </div>
+
+        <!-- Login Form -->
+        <form id="login-form">
+          <input type="text" id="login" class="fadeIn second" placeholder="usuario">
+          <input type="password" id="password" class="fadeIn third" placeholder="contraseña">
+          <input type="submit" class="fadeIn fourth" value="Ingresar" onclick="onLogin(event)">
+        </form>
+        <div id="alert-msg"></div>
+        <br>
+
+        <br>
+        <br>
+      </div>
+    </div>    
+  </body>
+</html>
